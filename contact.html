@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css"> <!-- Linking your dark-themed CSS -->
+  <style>
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 200px;
+  background: var(--darker-bg);
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#home" class="logo"><img href="index.html#home" src="logoo1.png" alt="AK"></a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="#Certify">Certifications</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="fc2f0bf8-2e00-4bb0-865d-387c4fc2698d">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="pnumber">Phone Number</label>
+      <input type="text" id="pnumber" name="phonenumber" placeholder="Your Contact number..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="india">India</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="russia">Russia</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Kushwaha. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/aditya-kumar-191071291/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/22adityakumar"><i class="fa-brands fa-github"></i></a>
+      <a href="https://unstop.com/u/aditykum1867"><i class="fa-solid fa-user-tie"></i></a>
+      <a href="https://www.instagram.com/adikr_2211?igsh=eTE2cGQyNjVpdjA0"><i class="fa-brands fa-instagram"></i></a>
+      <!--<a href="#"><i class="fa-brands fa-whatsapp"></i></a>-->
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <!-- Setup and start animation! -->
+   <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Development', 'Machine Learning', 'Data Structures & Algorithms'],
+      typeSpeed: 25,
+    });
+  </script>
+</body>
+</html>
